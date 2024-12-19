@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'main_font';
+    src: url('../font/tt_norms_pro_serif/TT\ Norms\ Pro\ Serif\ Trial\ ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Light';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Lights.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: #FFFDCB;
+    font-family: 'Pretendard-Light';
+    
+}
+
+#works_container {
+    background-color: #95C2FB;
+}
