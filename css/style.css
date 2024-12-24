@@ -1,3 +1,4 @@
+/* 폰트설정 시작 */
 @font-face {
     font-family: 'main_font';
     src: url('../font/tt_norms_pro_serif/TT\ Norms\ Pro\ Serif\ Trial\ ExtraBold.ttf') format('truetype');
@@ -19,51 +20,205 @@
 
 body {
     background-color: #FFFDCB;
-    font-family: 'Pretendard-Light';
-    
+    font-family: 'main_font';
 }
 
-#works_container {
-    background-color: #95C2FB;
-}
-.body > section{
-    display: flex;
-    height: 1080px;
-}
-header{
-    display: flex;
-    justify-content: center;
+/* 폰트설정 끝 */
+
+
+/* 헤더 시작 */
+header {
     margin-top: 30px;
-    position: sticky;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
 }
-header > ul{
+
+.haeder_menu {
     background-color: white;
     display: flex;
     width: 500px;
     height: 50px;
-    justify-content: center;
-    border-radius: 10%;
-}
-
-#works_container{
-    display: flex;
-}
-#works_container > area{
-    position: sticky;
-    display: flex;
-
-}
-.area > figure{
-    display: flex;
-    gap: 16px;
-}
-.component{
-    display: flex;
-    gap: 5px;
+    justify-content: space-between;
     align-items: center;
+    border-radius: 10%;
+    padding: 0 32px;
 }
+
+.haeder_menu > li > a {
+    padding: 8px 16px;
+}
+
+.menu_img {
+    width: 32px;
+    height: 32px;
+}
+
+/* 헤더 끝 */
+
+/* main_contianer 시작 */
+.main_contianer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.main_text {
+    font-size: 150px;   
+    line-height: 400px;
+    text-align: center;
+}
+
+.text_color {
+    color: #95C2FB;
+    text-shadow: 2px 2px 5px gray;
+}
+
+.component_box {
+    position: absolute;
+}
+
+.main_component {
+    position: relative;
+    right: -5%;
+}
+
+.main_component > p {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-55%,-110%);
+    color: #A0A7A7;
+    font-family: 'Pretendard-Light';
+}
+
+.component_box {
+    position: absolute;
+}
+
+.portfolio_year {
+    color: #A0A7A7;
+    font-family: 'Pretendard-Light';
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+/* main_contianer 끝 */
+
+/* about me시작 */
+
+.title_text {
+    font-size: 96px;
+}
+
 .about_me_img{
     width: 163px;
     height: 150px;
     display: flex;
 }
+
+.component{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.component_rel {
+    position: relative;
+    font-family: 'Pretendard-Light';
+}
+
+.component_img_license {
+    background-image: url(../img/자격증텍스트박스.png);
+    height: 168px;
+    width: 250px;
+}
+
+.component_ab {
+    position: absolute;
+    left: 40px;
+    top: 25px;
+}
+
+.component_img_career {
+    background-image: url(../img/커리어텍스트박스.png);
+    height: 136px;
+    width: 488px;
+}
+
+.component_ca {
+    position: absolute;
+    left: 40px;
+    top: 25px;
+}
+
+.component_img_hobby {
+    background-image: url(../img/취미텍스트박스.png);
+    height: 136px;
+    width: 528px;
+}
+
+.component_ho {
+    position: absolute;
+    left: 40px;
+    top: 25px;
+}
+
+.component_img_hello {
+    background-image: url(../img/인사텍스트박스.png);
+    width: 1289px;
+    height: 184px;
+}
+
+.component > h2 {
+    font-family: 'Pretendard-Light';
+    color: #9747FF;
+}
+
+.component_he {
+    position: absolute;
+    left: 50px;
+    top: 40px;
+    font-size: 24px;
+    line-height: 1.9rem;
+}
+.ab_text {
+    font-size: 20px;
+    line-height: 1.9rem;
+}
+
+
+
+/* about me 끝 */
+
+
+/* works_container 시작 */
+
+.title_text_works {
+    color: #FFFDCB;
+    text-shadow: 2px 2px 5px gray;
+}
+
+#works_container{
+    display: flex;
+    background-color: #95C2FB;
+}
+
+#works_container > area{
+    position: sticky;
+    display: flex;
+}
+
+.area > figure{
+    display: flex;
+    gap: 16px;
+}
+
+
+
+/* works_container 끝 */
