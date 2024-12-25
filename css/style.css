@@ -17,7 +17,20 @@
     font-weight: 400;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Pretendard-SemiBold';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+ 
 body {
     background-color: #FFFDCB;
     font-family: 'main_font';
@@ -43,7 +56,7 @@ header {
     height: 50px;
     justify-content: space-between;
     align-items: center;
-    border-radius: 10%;
+    border-radius: 50px;
     padding: 0 32px;
 }
 
@@ -185,7 +198,7 @@ header {
     left: 50px;
     top: 40px;
     font-size: 24px;
-    line-height: 1.9rem;
+    line-height: 2.3rem;
 }
 .ab_text {
     font-size: 20px;
@@ -204,6 +217,11 @@ header {
     text-shadow: 2px 2px 5px gray;
 }
 
+.work_text_area > p {
+    font-family: 'Pretendard-Light';
+    font-size: 20px;
+}
+
 #works_container{
     display: flex;
     background-color: #95C2FB;
@@ -214,11 +232,63 @@ header {
     display: flex;
 }
 
-.area > figure{
+.project {
+    width: 714px;
+    height: 947px;
+}
+
+.yellow_box {
+    background-color: #FFFDCB;
+    padding: 30px;
+    border-radius: 0 0 50px 50px;
+}
+
+.project_title {
     display: flex;
-    gap: 16px;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Pretendard-SemiBold';
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.explain {
+    font-family: 'Pretendard-Medium';
+    font-size: 24px;
 }
 
 
-
 /* works_container 끝 */
+
+/* contact 시작 */
+
+.contact_box {
+    font-family: 'Pretendard-Regular';
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+
+}
+.contact_address {
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    width: 384px;
+    height: 56px;
+    box-shadow: 1px 1px 10px gray;
+    /* display: flex; */
+    
+    
+}
+
+.contact_last {
+    width: 900px;
+    height: 140px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px gray;
+    position: relative;
+}
+
+
+/* contact 끝끝 */
