@@ -124,26 +124,53 @@ header {
 /* main_contianer 끝 */
 
 /* about me시작 */
+.about_me_container {
+    width: 1400px;
+    margin: 0 auto;
+}
+.about_me_top {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    align-items: center;
+    gap: 160px;
+}
+
+.about_me_bottom {
+    display: flex;
+    justify-content: center;
+    margin: 120px;
+}
 
 .title_text {
     font-size: 96px;
+    margin-left: 60px;
+    margin-top: 60px;
 }
 
-.about_me_img{
-    width: 163px;
-    height: 150px;
+.about_me_img {
     display: flex;
 }
 
-.component{
+.about_me_ul > li {
+    margin-bottom: 24px;
+}
+
+.component {
     display: flex;
     gap: 5px;
     align-items: center;
+    margin-bottom: 8px;
 }
 
 .component_rel {
     position: relative;
     font-family: 'Pretendard-Light';
+}
+
+.component_rel > ul {
+    list-style: disc;
+    padding-left: 6px;
 }
 
 .component_img_license {
@@ -173,7 +200,7 @@ header {
 .component_img_hobby {
     background-image: url(../img/취미텍스트박스.png);
     height: 136px;
-    width: 528px;
+    width: 583px;
 }
 
 .component_ho {
@@ -212,20 +239,40 @@ header {
 
 /* works_container 시작 */
 
+#works_container{
+    display: flex;
+    background-color: #95C2FB;
+}
+
 .title_text_works {
     color: #FFFDCB;
     text-shadow: 2px 2px 5px gray;
+    width: 1000px;
+    margin-bottom: 60px;
+}
+
+.work_text_area {
+    display: block;
+    align-items: center;
+    width: 50%;
+    position: sticky;
+    height: 100vh;
+    top: 0;
+    margin-top: 200px;
 }
 
 .work_text_area > p {
     font-family: 'Pretendard-Light';
     font-size: 20px;
+    margin-left: 60px;
+    margin-bottom: 20px;
+    line-height: 1.8rem;
 }
 
-#works_container{
-    display: flex;
-    background-color: #95C2FB;
+.work_text_area > figure {
+    margin-left: 60px;
 }
+
 
 #works_container > area{
     position: sticky;
