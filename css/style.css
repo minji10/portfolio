@@ -239,6 +239,11 @@ header {
 
 /* works_container 시작 */
 
+.works_box_container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 #works_container{
     display: flex;
     background-color: #95C2FB;
@@ -247,18 +252,19 @@ header {
 .title_text_works {
     color: #FFFDCB;
     text-shadow: 2px 2px 5px gray;
-    width: 1000px;
     margin-bottom: 60px;
+    margin-top: 0;
 }
 
 .work_text_area {
-    display: block;
-    align-items: center;
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 45%;
     position: sticky;
     height: 100vh;
     top: 0;
-    margin-top: 200px;
 }
 
 .work_text_area > p {
@@ -281,7 +287,11 @@ header {
 
 .project {
     width: 714px;
-    height: 947px;
+    margin-bottom: 60px;
+}
+
+.project > figure {
+    height: 737px;
 }
 
 .yellow_box {
@@ -309,13 +319,21 @@ header {
 
 /* contact 시작 */
 
+
+.contact_container {
+    padding-bottom: 120px;
+}
+
 .contact_box {
     font-family: 'Pretendard-Regular';
     font-size: 24px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    margin-top: 60px;
 }
+
 .contact_address {
     background-color: white;
     border-radius: 20px;
@@ -325,7 +343,6 @@ header {
     box-shadow: 1px 1px 10px gray;
     text-align: center;
     line-height: 56px;
-    
 }
 
 .contact_last {
@@ -334,9 +351,11 @@ header {
     background-color: white;
     border-radius: 20px;
     box-shadow: 1px 1px 10px gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    line-height: 60px;
+    line-height: 30px;
 }
-
 
 /* contact 끝 */
