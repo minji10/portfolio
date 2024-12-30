@@ -1,0 +1,6 @@
+@media screen and (max-width: 767px){
+    #about_me_container{
+        flex-direction: column;
+        margin-bottom: 48px;
+    } 
+}

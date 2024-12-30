@@ -121,6 +121,67 @@ header {
     justify-content: space-between;
     width: 80%;
 }
+
+.click-animation-container{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    
+}
+.clickspace{
+    width: 30px;
+    height: 50px;
+    border: 2px solid #A0A7A7;
+    border-radius: 40%;
+    transform: translate(-50%,-50%);
+    position: relative;
+    animation: clickdot infinite 2S ease normal;
+    animation-delay: 1s;
+}
+
+.click{
+    width: 10px;
+    height: 10px;
+    background-color: #A0A7A7;
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,75%);
+    animation: dot infinite 2S ease normal;
+    animation-delay: 1s;
+}
+
+@keyframes clickdot{
+    from{
+        top: 0;
+        opacity: 0.8;
+    }
+    20%{
+        top: 0;
+        opacity: 1;
+    }
+    
+    80%{
+        opacity: 0.8;
+    }
+    to{
+        top:50px;
+        opacity: 0;
+    }
+}
+
+@keyframes dot{
+    from{
+        top: 0;
+    }
+    20%{
+        top: 0;
+    }
+    to{
+        top:25px;
+    }
+   
+}
 /* main_contianer 끝 */
 
 /* about me시작 */
@@ -222,7 +283,7 @@ header {
 
 .component_he {
     position: absolute;
-    left: 50px;
+    left: 190px;
     top: 40px;
     font-size: 24px;
     line-height: 2.3rem;
