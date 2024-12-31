@@ -300,6 +300,10 @@ header {
 
 /* works_container 시작 */
 
+.media_br {
+    display: none;   
+} 
+
 .works_box_container {
     padding-top: 120px;
     padding-bottom: 120px;

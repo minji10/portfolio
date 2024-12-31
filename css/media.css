@@ -1,9 +1,310 @@
-@media screen and (max-width: 767px){
-    #about_me_container{
+@media screen and (max-width: 1400px){
+    .main_text {
+        font-size: 80px;
+    }
+
+    .about_me_img {
+        height: 300px;
+    }
+
+    .component_img_license {
+        background-size: contain;
+        background-repeat: no-repeat;        
+        width: 200px;
+    }
+
+    .component_img_career {
+        background-size: contain;
+        background-repeat: no-repeat;        
+        width: 400px;
+    }
+
+    .component_img_hobby {
+        background-size: contain;
+        background-repeat: no-repeat;        
+        width: 450px;
+    }
+
+    .component_img_hello {
+        background-size: contain;
+        background-repeat: no-repeat;        
+        width: 750px;
+        height: 184px;
+    }
+
+    .component_he {
+        left: 30px;
+        top: 16px;
+        font-size: 14px;
+        line-height: 27px;
+    }
+
+    .ab_text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .project {
+        width: 450px;
+        margin-bottom: 60px;
+    }
+
+    .project_title {
+        font-size: 20px;
+    }
+
+    .explain {
+        font-size: 16px;
+    }
+
+    .project > figure > a > img {
+        width: 450px;
+        height: 450px;
+    }
+
+    .project > figure {
+        height: 450px;
+    }
+
+    .works_box_container {
+        padding-left: 32px;
+    }
+
+    .work_text_area > p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 975px){
+    .main_text {
+        font-size: 60px;
+    }
+
+    .title_text {
+        font-size: 48px;
+    }
+
+    .about_me_img > img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .about_me_top {
         flex-direction: column;
-        margin-bottom: 48px;
-    } 
-    #works_container{
+    }
+
+    .about_me_ul {
+        display: flex;
         flex-direction: column;
+        align-items: center
+    }
+
+    .about_me_bottom {
+        margin: 0 auto;
+    }
+
+
+    .component_img_license {
+        background-size: contain;
+        background-repeat: no-repeat;        
+        width: 180px;
+    }
+
+    .component_img_career {
+        background-size: contain;
+        background-repeat: no-repeat;        
+        width: 328px;
+    }
+
+    .component_img_hobby {
+        background-size: contain;
+        background-repeat: no-repeat;        
+        width: 400px;
+    }
+
+    .component_img_hello {
+        background-size: contain;
+        background-repeat: no-repeat;        
+        width: 600px;
+        height: 184px;
+    }
+
+    .component_he {
+        left: 30px;
+        top: 16px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .ab_text {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .project {
+        width: 328px;
+    }
+
+    .about_me_ul > li {
+        margin: 0;
+    }
+
+    .explain {
+        font-size: 14px;
+    }
+
+    .project > figure > a > img {
+        width: 328px;
+        height: 328px;
+    }
+
+    .project > figure {
+        height: 328px;
+    }
+
+    .project_title {
+        font-size: 16px;
+    }
+
+    .contact_box {
+        font-size: 14px;
+    }
+
+    .contact_last {
+        width: 450px;
+        height: 100px;
+    }
+
+    .media_br {
+        display: block;   
+    }
+}
+
+@media screen and (max-width: 760px){
+
+    .haeder_menu {
+        width: 328px;
+        box-sizing: border-box;
+    }
+
+    .works_container {
+        flex-direction: column;
+    }
+
+    .work_text_area {
+        width: 100%;
+        position: relative;
+        height: auto;
+        margin: 50px 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    #works_container > area {
+        position: relative;
+    }
+
+    .works_box_container {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title_text_works,
+    .work_text_area > p,
+    .work_text_area > figure {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 760px){
+
+    .component_rel > ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .component_img_hobby {
+        background-repeat: no-repeat;        
+        width: 328px;
+    }
+
+    .component_img_hello {
+        background-size: contain;
+        background-repeat: no-repeat;        
+        width: 328px;
+        height: 184px;
+    }
+
+    .component_he,
+    .component_ca,
+    .component_ho,
+    .component_ab {
+        left: 20px;
+    }
+
+    .component_img_hobby {
+        background-image: url(../img/커리어텍스트박스.png);
+    }
+
+    .component_ho {
+        top: 14px
+    }
+
+    .component_ca {
+        top: 20px;
+    }
+
+    .component_he {
+        top: 20px;
+    }
+
+    .ab_text {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .component_img_hello {
+        background-image: url(../img/media_hello_box.png);
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .main_text {
+        font-size: 38px;
+        line-height: 200px;
+    }
+
+    .main_component {
+        right: -3%;
+    }
+
+    .main_component > figure > img {
+        width: 328px;
+    }
+
+    .main_component > p {
+        font-size: 12px;
+    }
+
+    .title_text  {
+        margin: 16px 0;
+        text-align: center;
+    }
+
+    .about_me_top {
+        gap: 50px;
+    }
+
+    .contact_address,
+    .contact_last {
+        width: 328px;
+        font-size: 12px;
+    }
+
+    .contact_last {
+        line-height: 20px;
     }
 }
