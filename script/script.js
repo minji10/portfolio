@@ -1,6 +1,6 @@
 <script>
   // 모든 메뉴 아이템 가져오기
-  const menuItems = document.querySelectorAll('.haeder_menu li a');
+  const menuItems = document.querySelectorAll('.header_menu li a');
 
   // 이미지 경로 설정
   const activeImages = {
