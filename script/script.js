@@ -88,6 +88,7 @@ window.addEventListener("mousewheel", (e) => {
   }
 });
 
+
 // 창 크기 변경 이벤트
 window.addEventListener("resize", checkWindowSize);
 
@@ -112,6 +113,9 @@ const originalImageMap = {
   contact_container: "./img/contact_icon_1.png",
 };
 
+// 현재 활성화된 섹션 추적 변수
+let activeSectionId = null;
+
 // Intersection Observer 설정
 const observer = new IntersectionObserver(
   (entries) => {
@@ -120,24 +124,26 @@ const observer = new IntersectionObserver(
       const sectionKeys = Object.keys(sectionImageMap);
 
       if (entry.isIntersecting) {
+        // 활성화된 섹션 ID 업데이트
+        activeSectionId = sectionId;
+
         // 섹션에 진입했을 때 이미지 변경
         menuImages.forEach((img, index) => {
-          if (sectionId === sectionKeys[index]) {
-            img.src = sectionImageMap[sectionId];
-          }
+          const key = sectionKeys[index];
+          img.src = key === sectionId ? sectionImageMap[key] : originalImageMap[key];
         });
-      } else {
-        // 섹션을 벗어났을 때 원래 이미지로 복원
-        menuImages.forEach((img, index) => {
-          if (sectionId === sectionKeys[index]) {
-            img.src = originalImageMap[sectionId];
-          }
-        });
+      }
+    });
+
+    // 다른 섹션을 벗어났을 때 이미지 복원
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting && entry.target.id === activeSectionId) {
+        activeSectionId = null; // 섹션이 벗어났으므로 초기화
       }
     });
   },
   {
-    threshold: 0.5, // 섹션의 절반 이상이 화면에 들어오면 트리거
+    threshold: 0, // 섹션의 절반 이상이 화면에 들어오면 트리거
   }
 );
 
