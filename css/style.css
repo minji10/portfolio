@@ -32,7 +32,7 @@
 }
  
 body {
-    background-color: #FFFDCB;
+    background-color: #FEF9EE;
     font-family: 'main_font';
 }
 
@@ -103,13 +103,13 @@ body {
 }
 
 .main_text {
-    font-size: 150px;   
+    font-size: 250px;   
     line-height: 400px;
     text-align: center;
 }
 
 .text_color {
-    color: #95C2FB;
+    color: #846B53;
     text-shadow: 2px 2px 5px gray;
 }
 
@@ -141,6 +141,7 @@ body {
     display: flex;
     justify-content: space-between;
     width: 80%;
+    line-height: 150px;
 }
 
 .click-animation-container{
