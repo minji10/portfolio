@@ -333,11 +333,11 @@ body {
 
 #works_container{
     display: flex;
-    background-color: #95C2FB;
+    background-color: #FEF9EE;
 }
 
 .title_text_works {
-    color: #FFFDCB;
+    color: #846B53;
     text-shadow: 2px 2px 5px gray;
     margin-bottom: 60px;
     margin-top: 0;
@@ -382,9 +382,10 @@ body {
 }
 
 .yellow_box {
-    background-color: #FFFDCB;
+    background-color: #846B53;
     padding: 30px;
     border-radius: 0 0 50px 50px;
+    color: #FEF9EE;
 }
 
 .project_title {
